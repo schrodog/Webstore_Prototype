@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,22 +11,20 @@ Web Store Template
 http://www.templatemo.com/preview/templatemo_341_web_store
 -->
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
-
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js">
 
+<script type="text/javascript" src="js/ddsmoothmenu.js">
 /***********************************************
 * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
 * This notice MUST stay intact for legal use
 * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
 ***********************************************/
-
 </script>
 
 <script type="text/javascript">
-
 ddsmoothmenu.init({
 	mainmenuid: "templatemo_menu", //menu DIV id
 	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
@@ -41,6 +39,7 @@ function clearText(field)
     else if (field.value == '') field.value = field.defaultValue;
 }
 </script>
+
 
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <script language="javascript" type="text/javascript" src="scripts/mootools-1.2.1-core.js"></script>
@@ -64,64 +63,67 @@ function clearText(field)
 
 	});
 </script>
+<!-- <link rel="import" href="header_template.html"> -->
 
 </head>
 
 <body id="subpage">
 
 <div id="templatemo_wrapper">
-	<div id="templatemo_header">
-    	<div id="site_title">
-        	<h1><a href="#">Free Website Template</a></h1>
-        </div>
-
-        <div id="header_right">
-            <ul id="language">
-                <li><a><img src="images/usa.png" alt="English" /></a></li>
-                <li><a><img src="images/china.png" alt="Chinese" /></a></li>
-                <li><a><img src="images/hongkong.png" alt="Germany" /></a></li>
-            </ul>
-            <div class="cleaner"></div>
-            <div id="templatemo_search">
-                <form action="#" method="get">
-                  <input type="text" value="Search" name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
-                  <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
-                </form>
-            </div>
-         </div> <!-- END -->
-    </div> <!-- END of header -->
-
-    <div id="templatemo_menu" class="ddsmoothmenu">
-			<ul>
-					<li><a href="index.html" class="selected">Home</a></li>
-					<li><a href="products.html">Products</a>
-							<ul>
-									<li><a href="#">Camera</a>
-										<ul>
-											<li><a href="#">Single-Lens Reflex Camera</a></li>
-											<li><a href="#">Compact Camera</a></li>
-											<li><a href="#">Instant Camera</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Lens</a></li>
-									<li><a href="#">Lighting</a></li>
-									<li><a href="#">Tripod</a></li>
-									<li><a href="#">Accessories</a>
-										<ul>
-											<li><a href="#">Camera Filters & Adapters</a></li>
-											<li><a href="#">Bags & Cases</a></li>
-										</ul>
-									</li>
-
-						</ul>
-					</li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="faqs.html">FAQs</a></li>
-					<!-- <li><a href="checkout.html">Checkout</a></li> -->
-					<li><a href="contact.html">Contact</a></li>
+		
+	
+<div id="templatemo_header">
+	<div id="site_title">
+		<h1><a href="#"></a></h1>
+	</div>
+	<div id="header_right">
+			<ul id="language">
+					<li><a><img src="images/usa.png" alt="English" /></a></li>
+					<li><a><img src="images/china.png" alt="Chinese" /></a></li>
+					<li><a><img src="images/hongkong.png" alt="Germany" /></a></li>
 			</ul>
-      <br style="clear: left" />
-    </div> <!-- end of templatemo_menu -->
+			<div class="cleaner"></div>
+			<div id="templatemo_search">
+					<form action="#" method="get">
+						<input type="text" value="Search" name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+						<input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+					</form>
+			</div>
+	 </div> <!-- END -->
+</div> <!-- END of header -->
+
+<div id="templatemo_menu" class="ddsmoothmenu">
+	<ul>
+			<li><a href="index.html" class="selected">Home</a></li>
+			<li><a href="products.html">Products</a>
+					<ul>
+							<li><a href="#">Camera</a>
+								<ul>
+									<li><a href="#">Single-Lens Reflex Camera</a></li>
+									<li><a href="#">Compact Camera</a></li>
+									<li><a href="#">Instant Camera</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Lens</a></li>
+							<li><a href="#">Lighting</a></li>
+							<li><a href="#">Tripod</a></li>
+							<li><a href="#">Accessories</a>
+								<ul>
+									<li><a href="#">Camera Filters and Adapters</a></li>
+									<li><a href="#">Bags and Cases</a></li>
+								</ul>
+							</li>
+
+				</ul>
+			</li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="faqs.html">FAQs</a></li>
+			<!-- <li><a href="checkout.html">Checkout</a></li> -->
+			<li><a href="contact.html">Contact</a></li>
+	</ul>
+	<br style="clear: left" />
+</div> <!-- end of templatemo_menu -->
+
 
     <div class="cleaner h20"></div>
     <div id="templatemo_main_top"></div>
@@ -236,12 +238,12 @@ function clearText(field)
 
     <div id="templatemo_footer">
 			<h4>About Us</h4>
-				<p>We are a brand-new online camera related store, selling all modern and fashion cameras and related products from Conoon.</p>
+				<p>We are a brand-new online camera related store, selling all modern and fashion cameras and related products from Conon.</p>
 		</div>
 
         <div class="cleaner h40"></div>
 		<center>
-			Copyright © 2017 Conoon
+			Copyright © 2017 Conon
 		</center>
     </div> <!-- END of footer -->
 

@@ -110,14 +110,31 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 
 #site_title { float: left; margin-top: 30px; }
 #site_title h1 { margin: 0; padding: 0 }
-#site_title h1 a { display: block; width: 120px; padding: 35px 0 0 85px; font-size: 12px; color: #999; text-align: left; background: url(../images/templatemo_logo.png) no-repeat top left }
+#site_title h1 a { display: block; width: 120px; padding: 30px 55px; font-size: 12px; color: #999; text-align: left; background: url(../images/templatemo_logo.png) no-repeat top left }
 
-#header_right { float: right; display: inline-block;	 padding-top: 20px; }
+#header_right { float: right; display: inline-block;	 padding-top: 10px; }
 
 #language { margin: 0; padding: 0; list-style: none }
 #language li { float: right; display: block; margin-left: 5px }
+#language img { height: 26px; cursor: pointer;}
 
-#templatemo_search { clear: both; margin-top: 5px; width: 232px; height: 31px; background: url(../images/templatemo_searchbox.png) }
+#header_right #account {
+	background-color: #f0f0f0;
+	list-style: none;
+	line-height: 35px;
+	margin-top: 0;
+	width: 80%;
+	text-align: right;
+	float: right;
+}
+#header_right #account li {
+	display: inline-block;
+	/*margin-right: 10px;*/
+	padding: 0 20px;
+	font-size: 20px;
+}
+
+#templatemo_search { clear: both; margin-top: 0px; width: 232px; height: 31px; background: url(../images/templatemo_searchbox.png); margin-left: 13px;}
 #templatemo_search form {
 	margin: 0;
 	padding: 0;
@@ -158,7 +175,7 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 
 #templatemo_middle p {
 	color: #ccc;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 24px;
 	margin-bottom: 20px;
 }
@@ -173,8 +190,8 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 	padding: 8px 20px;
 	font-size: 18px;
 	font-weight: bold;
-	background: #fff;
-	color: #21bdd0;
+	background: #636363;
+	color: #fff;
 }
 
 #product_slider {
@@ -183,8 +200,8 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 }
 
 #sidebar h3 {
-	font-size: 16px;
-	padding: 0 0 15px 0;
+	font-size: 25px;
+	padding: 0 0 25px 0;
 	margin: 0 0 15px 0;
 	background: url(../images/sidebar_header_bg.png)  left bottom no-repeat
 }
@@ -194,14 +211,17 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 	padding: 0;
 }
 .sidebar_menu li {
-	margin: 0;
-	padding: 2px 0 3px 15px;
+	margin: 10px 0;
+	padding: 2px 0 3px 5px;
 	background: url(../images/templatemo_list_01.png) no-repeat scroll 0 8px;
 	border-bottom: 1px dotted #ccc
 }
 
 .sidebar_menu li a {
-	font-size: 11px;
+	font-size: 18px;
+}
+.sidebar_menu ul {
+	margin-bottom: 10px;
 }
 
 #content h2 { font-size: 24px; padding-bottom: 10px; border-bottom: 1px solid #ccc; margin-bottom: 20px }
@@ -296,3 +316,11 @@ table td { border-bottom: 1px solid #ccc }
 .col_23 { width: 620px }
 
 .no_margin_right { margin-right: 0 }
+
+/** mobile device **/
+
+/*@media (max-width: 600px) {
+	#templatemo_middle h1 {
+		font-size: 70px;
+	}
+}*/

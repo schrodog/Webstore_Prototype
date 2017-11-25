@@ -130,7 +130,7 @@ N.clearAttributes();if(P){N.mergeAttributes(P);}}else{if(N.removeEvents){N.remov
 }if(window.CollectGarbage){CollectGarbage();}H=F=null;};var J=function(N,L,S,M,P,R){var O=N[S||L];var Q=[];while(O){if(O.nodeType==1&&(!M||Element.match(O,M))){if(!P){return $(O,R);
 }Q.push(O);}O=O[L];}return(P)?new Elements(Q,{ddup:false,cash:!R}):null;};var E={html:"innerHTML","class":"className","for":"htmlFor",text:(Browser.Engine.trident||(Browser.Engine.webkit&&Browser.Engine.version<420))?"innerText":"textContent"};
 var B=["compact","nowrap","ismap","declare","noshade","checked","disabled","readonly","multiple","selected","noresize","defer"];var K=["value","accessKey","cellPadding","cellSpacing","colSpan","frameBorder","maxLength","readOnly","rowSpan","tabIndex","useMap"];
-Hash.extend(E,B.associate(B));Hash.extend(E,K.associate(K.map(String.toLowerCase)));var A={before:function(M,L){if(L.parentNode){L.parentNode.insertBefore(M,L);
+Hash.extend(E,B.associate(B));Hash.extend(E,K.associate(K.map(String.prototype.toLowerCase)));var A={before:function(M,L){if(L.parentNode){L.parentNode.insertBefore(M,L);
 }},after:function(M,L){if(!L.parentNode){return ;}var N=L.nextSibling;(N)?L.parentNode.insertBefore(M,N):L.parentNode.appendChild(M);},bottom:function(M,L){L.appendChild(M);
 },top:function(M,L){var N=L.firstChild;(N)?L.insertBefore(M,N):L.appendChild(M);}};A.inside=A.bottom;Hash.each(A,function(L,M){M=M.capitalize();Element.implement("inject"+M,function(N){L(this,$(N,true));
 return this;});Element.implement("grab"+M,function(N){L($(N,true),this);return this;});});Element.implement({set:function(O,M){switch($type(O)){case"object":for(var N in O){this.set(N,O[N]);
