@@ -105,7 +105,8 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 #templatemo_footer {
 	width: 940px;
 	padding: 60px 10px 20px;
-	background: url(../images/templatemo_main_bottom.png) top no-repeat
+	background: url(../images/templatemo_main_bottom.png) top no-repeat;
+	margin-left: 10%;
 }
 
 #site_title { float: left; margin-top: 30px; }
