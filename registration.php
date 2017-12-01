@@ -1,4 +1,4 @@
-<?php 
+<?php
 // phpinfo();
 require 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
@@ -22,13 +22,13 @@ $mail->AddReplyTo($webmaster_email, "Squall.f");
 $mail->IsHTML(true);
 $mail->Subject = "Welcome to Canoon Online Shop";
 $mail->Body = "Hi there,<br><br>Thanks for signing up to be the member of Canoon online store. From now
-  on, you'll get regular updates on fare sales and special offers from our store. In the meantime, check out our store to find your favourite product !<br><br>Cheers,<br>Canoon Company";
+  on, you'll get regular updates on fare sales and special offers from our store. Click this link <a href='localhost/Webstore_Prototype/index_in.html'>http://www.webstore_store/conoon/index.html</a> to activate your account. In the meantime, check out our store to find your favourite product !<br><br>Cheers,<br>Canoon Company";
 
-// if (!$mail->Send()){
-//   echo "error sending email: ".$mail->ErrorInfo;
-// } else {
-//   // echo "Success.";
-// }
+if (!$mail->Send()){
+  echo "error sending email: ".$mail->ErrorInfo;
+} else {
+  // echo "Success.";
+}
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -119,11 +119,11 @@ ddsmoothmenu.init({
     	<div id="site_title">
         	<h1><a href="#"></a></h1>
         </div>
-				
+
 				<div id="top-function-bar">
-					
+
 				</div>
-				
+
         <div id="header_right">
 					<ul id="account">
 						<li><a href="signin.html">Sign In</a></li>
