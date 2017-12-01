@@ -12,7 +12,12 @@ http://www.templatemo.com/preview/templatemo_341_web_store
 -->
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
-<link rel="stylesheet" type="text/css" href="css/signin.css" />
+<style rel="stylesheet" type="text/css">
+	#templatemo_footer {
+		margin-left: 0;
+	}
+</style>
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/ddsmoothmenu.js">
 
@@ -35,7 +40,16 @@ ddsmoothmenu.init({
 })
 
 </script>
-
+<style rel="stylesheet" type="text/css">
+	table td{
+		border: none;
+		padding: 10px;
+		font-size: 18px;
+	}
+	table tr td:nth-child(1){
+		color: blue;
+	}
+</style>
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <script language="javascript" type="text/javascript" src="scripts/mootools-1.2.1-core.js"></script>
 <script language="javascript" type="text/javascript" src="scripts/mootools-1.2-more.js"></script>
@@ -62,18 +76,6 @@ ddsmoothmenu.init({
 		if (field.defaultValue == field.value) field.value = '';
 		else if (field.value == '') field.value = field.defaultValue;
 	}
-	function login(){
-		(function($) {
-			var username = $("#content #username").val();
-			var password = $("#content #password").val();
-			// console.log(username+","+password);
-			if (username=="admin") {
-				window.location = "admin_menu.html";
-			} else {
-				window.location = "index_in.html";
-			}
-		})(jQuery);
-	}
 </script>
 
 </head>
@@ -86,14 +88,10 @@ ddsmoothmenu.init({
         	<h1><a href="#"></a></h1>
         </div>
 
-				<div id="top-function-bar">
-
-				</div>
-
         <div id="header_right">
 					<ul id="account">
-						<li><a href="signin.html">Sign In</a></li>
-						<!-- <li><a href="#">My Account</a></li> -->
+						<li><a href="index.html">Sign Out</a></li>
+						<li><a href="#">Administrator</a></li>
 					</ul>
 					<ul id="language">
             <!-- <div class="cleaner"></div> -->
@@ -119,7 +117,7 @@ ddsmoothmenu.init({
                 <ul>
                     <li><a href="#">Camera</a>
 											<ul>
-												<li><a href="#">Single-Lens Reflex Camera</a></li>
+												<li><a href="products.html">Single-Lens Reflex Camera</a></li>
 												<li><a href="#">Compact Camera</a></li>
 												<li><a href="#">Instant Camera</a></li>
 											</ul>
@@ -144,23 +142,81 @@ ddsmoothmenu.init({
         <br style="clear: left" />
     </div> <!-- end of templatemo_menu -->
 
-      <div id="content" class="container">
-        <h2>Sign In</h2>
+    <!-- <div id="templatemo_middle">
+    	<img src="images/cover_page_camera.jpeg" alt="Image 01" />
+    	<h1>Welcome to Camera Store</h1>
+        <p>Camera store is a place that you can find many necessary equipments for photography.</p>
+        <a href="#" class="buy_now">Browse All Products</a>
+    </div>  -->
 
-        <label id="1">Username: </label>
-        <input name="username" id="username" placeholder="Username" style="padding: 0 10px;"><br>
-        <label id="2">Password: </label>
-        <input name="password1" id="password" type="password" placeholder="Password" style="padding: 0 10px;"><br>
-				<a id="forget">Forget Password?</a>
-        <a id="register" href="signup.html">Register</a>
-        <a type="button" id="createAcBtn" class="btn" onclick="login()" >Login</a>
-      </div> <!-- END of content -->
+    <div id="templatemo_main_top"></div>
+    <div id="templatemo_main">
+    	
+        <div id="sidebar">
+        	<h3>Management Menu</h3>
+            <ul class="sidebar_menu">
+			    			<li><a href="#">Customer</a>
+								</li>
+                <li><a href="#">Product</a></li>
+									<ul>
+										<li><a href="#">Catalog</a></li>
+										<li><a href="#">Details</a></li>
+									</ul>
+                <li><a href="#">Supply</a></li>
+                <li><a href="#">Order</a></li>
+									<!-- <ul>
+										<li><a href="#">Camera Filters & Adapters</a></li>
+										<li><a href="#">Bags & Cases</a></li>
+									</ul> -->
+								<li><a href="#">Sales Report</a></li>
+								<li><a href="#">Server</a>
+									<ul>
+										<li><a href="#">Database</a></li>
+										<li><a href="#">Machine Status</a></li>
+									</ul>
+								</li>
+						</ul>
+        </div>
 
+        <div id="content">
 
+					<h2>Overview</h2>
+						<!-- <div class="col col_14 product_gallery">
+							<a href="productdetail.html"><img src="images/product/SLR Camera/D5300 with 18-55mm_55-200mm VR II Bundle.jpg" alt="Product 01" /></a>
+								<h3>Originals 600 Camera - Red Stripe Refurbished</h3>
+								<p class="product_price">$ 6220</p>
+								<a href="shoppingcart.html" class="add_to_cart">Add to Cart</a>
+						</div> -->
+						<h3>General Information</h3>
+						<table>
+							<tr>
+								<td>Operation Status: </td>
+								<td>Service started</td>
+							</tr><tr>
+								<td>Start Time: </td>
+								<td>April 12,2017 12:38:40pm</td>
+							</tr><tr>
+								<td>Distributed System: </td>
+								<td>Yes</td>
+							</tr><tr>
+								<td></td>
+							</tr>
+						</table>
+						
+						<h3>Database Usage Memory</h3>
+						<table>
+							<tr>
+								<td>On Host: </td>
+								<td>36.95 / 459.29 GB</td>
+							</tr>
+						</table>
+
+        </div> <!-- END of content -->
         <div class="cleaner"></div>
     </div> <!-- END of main -->
 
     <div id="templatemo_footer">
+
         <div class="">
         	<h4>About Us</h4>
             <p>We are a brand-new online camera related store, selling all modern and fashion cameras and related products from Conoon.</p>
